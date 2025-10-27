@@ -1,0 +1,19 @@
+/* Keep the body simple; individual components can use flexbox as needed */
+body {
+	text-align: center;
+}
+
+/* Center the div with id="controls".
+   - margin: 0 auto centers the block-level element horizontally.
+   - display:flex on the controls container centers its child controls.
+   - gap provides spacing between the children.
+*/
+#controls {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* center children horizontally */
+	align-items: center;     /* center children vertically */
+	gap: 0.5rem;
+	margin: 1rem auto;       /* center this div within its parent */
+	max-width: 90%;
+}
