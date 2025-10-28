@@ -17,3 +17,32 @@ body {
 	margin: 1rem auto;       /* center this div within its parent */
 	max-width: 90%;
 }
+
+/* Responsive grid for images */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 12px;
+	padding: 1rem;
+	justify-items: center;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Optional: buttons under images */
+.gallery button {
+	margin-top: 6px;
+	padding: 6px 10px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background: #fff;
+	cursor: pointer;
+}
+.gallery button:hover {
+	background: #f7f7f7;
+}

@@ -1,0 +1,20 @@
+{
+  "total": 2,
+  "total_pages": 1,
+  "results": [
+    {
+      "id": "sample1",
+      "alt_description": "Mountain at sunrise",
+      "urls": { "small": "https://via.placeholder.com/400x300.png?text=Mountain+at+sunrise" },
+      "links": { "html": "https://unsplash.com/photos/sample1" },
+      "user": { "name": "Sample Photographer" }
+    },
+    {
+      "id": "sample2",
+      "alt_description": "Beach and palm trees",
+      "urls": { "small": "https://via.placeholder.com/400x300.png?text=Beach+and+palm+trees" },
+      "links": { "html": "https://unsplash.com/photos/sample2" },
+      "user": { "name": "Sample Photographer" }
+    }
+  ]
+}

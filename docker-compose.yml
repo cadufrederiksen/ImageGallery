@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  api:
+    build: ./api
+    env_file:
+      - ./.env
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./gallery.css:/usr/share/nginx/html/gallery.css:ro
+      - ./gallery.js:/usr/share/nginx/html/gallery.js:ro
+      # if you add assets, mount the folder too:
+      # - ./assets:/usr/share/nginx/html/assets:ro
+    depends_on:
+      - api
+    restart: unless-stopped
